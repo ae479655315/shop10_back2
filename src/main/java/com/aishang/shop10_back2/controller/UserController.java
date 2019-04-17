@@ -31,7 +31,7 @@ public class UserController {
         User u = userService.findUserForLogin(user);
         if(u == null){
             //用户名秘密错误
-            model.addAttribute("msg","用户名或密码错误！");
+            model.addAttribute("msg","用户名或密码错误>>！");
             return "login";
         }else{
             // 成功
